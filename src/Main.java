@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        task3();
+        task2();
     }
 
     public static int[] generateRandomArray() {
@@ -33,7 +33,7 @@ public class Main {
         }
         System.out.println("Максимальная сумма трат за день состовляет " + maxPayment + " рублей");
         int minPayment = 200001;
-        for(int e = 0; e <arr.length; e--) {
+        for(int e = 0; e <arr.length; e++) {
             if (arr[e] < minPayment) {
                 minPayment = arr[e];
             }
