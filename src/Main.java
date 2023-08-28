@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        task2();
+        task1();
     }
 
     public static int[] generateRandomArray() {
@@ -45,9 +45,11 @@ public class Main {
         System.out.println("Задача 3");
         int[] arr = generateRandomArray();
         int sum = 0;
+        int medium = 0;
         for (int element : arr) {
-            sum += element / 30;
+            sum += element;
+            medium = sum / arr.length;
         }
-        System.out.println("Средняя сумма трат за месяц составила " + sum + " рублей");
+        System.out.println("Средняя сумма трат за месяц составила " + medium + " рублей");
     }
 }
