@@ -1,6 +1,7 @@
+import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
-        task1();
+        task3();
     }
 
     public static int[] generateRandomArray() {
@@ -26,14 +27,14 @@ public class Main {
         System.out.println("Задача 2");
         int[] arr = generateRandomArray();
         int maxPayment = -1;
-        for(int i = 0; i <arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             if (arr[i] > maxPayment) {
                 maxPayment = arr[i];
             }
         }
         System.out.println("Максимальная сумма трат за день состовляет " + maxPayment + " рублей");
         int minPayment = 200001;
-        for(int e = 0; e <arr.length; e++) {
+        for (int e = 0; e < arr.length; e++) {
             if (arr[e] < minPayment) {
                 minPayment = arr[e];
             }
@@ -48,8 +49,14 @@ public class Main {
         int medium = 0;
         for (int element : arr) {
             sum += element;
-            medium = sum / arr.length;
         }
+        medium = sum / arr.length;
         System.out.println("Средняя сумма трат за месяц составила " + medium + " рублей");
+
+
+        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (char q = 10; q < reverseFullName.length; q--) {
+            System.out.print(reverseFullName[q]);
+        }
     }
 }
